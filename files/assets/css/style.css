@@ -9786,7 +9786,8 @@ RINCOSOFT - menu configuracion
   background: #4527a0;
 }
 .theme-color a[lheader-theme="theme6"] {
-  background: #37474f;
+ background: #37474f;
+
 }
 .theme-color a[lheader-theme="theme7"] {
   background: #000;
@@ -9989,7 +9990,8 @@ RINCOSOFT - menu configuracion
   color: #fff;
 }
 .pcoded .pcoded-header[header-theme="theme6"] {
-  background: #37474f;
+  /*background: #37474f; RINCOSOFT - FONDO TRANSPARENTE */
+  background: rgba(1, 0, 0, 0.92);
 }
 .pcoded .pcoded-header[header-theme="theme6"] .input-group-addon,
 .pcoded .pcoded-header[header-theme="theme6"] a {
@@ -10017,7 +10019,8 @@ RINCOSOFT - menu configuracion
 }
 .pcoded[fream-type="theme6"] .main-menu .main-menu-header:before,
 .pcoded[fream-type="theme6"] .page-header:before {
-  background: rgba(55, 71, 79, 0.5);
+  /*background: rgba(55, 71, 79, 0.5); RINCOSOFT - SE DESACTIVA PARA OCULTAR EL FONDO DEBAJO DEL TRANSPARENTE DEL MENU DE ARRIBA THEME 6*/
+  background: #000000;
 }
 
 body .pcoded[pcoded-device-type="phone"][vertical-nav-type="expanded"] .pcoded-navbar, body .pcoded[pcoded-device-type="tablet"][vertical-nav-type="expanded"] .pcoded-navbar {
