@@ -350,7 +350,6 @@ code {
   }
 }
 .page-header {
-  background-image: url("../images/breadcrumb-bg.jpg");
   background-size: cover;
   position: relative;
   border-radius: 0;
