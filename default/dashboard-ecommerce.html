@@ -20,28 +20,27 @@
     <link rel="icon" href="../files/assets/images/favicon.ico" type="image/x-icon" />
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" />
-    <!-- waves.css -->
-    <link rel="stylesheet" href="../files/assets/pages/waves/css/waves.min.css" type="text/css" media="all" />
     <!-- Required Fremwork -->
     <link rel="stylesheet" type="text/css" href="../files/bower_components/bootstrap/css/bootstrap.min.css" />
     <!-- waves.css -->
     <link rel="stylesheet" href="../files/assets/pages/waves/css/waves.min.css" type="text/css" media="all" />
-    <!-- themify icon -->
+    <!-- themify-icons line icon -->
     <link rel="stylesheet" type="text/css" href="../files/assets/icon/themify-icons/themify-icons.css" />
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="../files/assets/icon/icofont/css/icofont.css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" type="text/css" href="../files/assets/icon/font-awesome/css/font-awesome.min.css" />
-    <!-- Material Icon -->
-    <link rel="stylesheet" type="text/css" href="../files/assets/icon/material-design/css/material-design-iconic-font.min.css" />
-    <!-- simple line icon -->
-    <link rel="stylesheet" type="text/css" href="../files/assets/icon/simple-line-icons/css/simple-line-icons.css" />
-    <!-- am chart export.css -->
-    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
-    <!-- scrollbar.css -->
-    <link rel="stylesheet" type="text/css" href="../files/assets/css/jquery.mCustomScrollbar.css" />
-    <!-- radial chart.css -->
-    <link rel="stylesheet" href="../files/assets/pages/chart/radial/css/radial.css" type="text/css" media="all" />
+    <!-- Data Table Css -->
+    <link rel="stylesheet" type="text/css" href="../files/bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" type="text/css" href="../files/assets/pages/data-table/css/buttons.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../files/bower_components/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" />
+    <link rel="stylesheet" type="text/css" href="../files/assets/pages/data-table/extensions/responsive/css/responsive.dataTables.css" />
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="../files/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../files/assets/css/jquery.mCustomScrollbar.css" />
+    <!-- Material Icon -->
+    <link rel="stylesheet" type="text/css" href="../files/assets/icon/material-design/css/material-design-iconic-font.min.css" />
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
 <!-- Menu sidebar static layout -->
 
@@ -537,8 +536,8 @@
                             <div class="row align-items-center">
                                 <div class="col-md-8">
                                     <div class="page-header-title">
-                                        <h5 class="m-b-10">Dashboard Ecommerce</h5>
-                                        <p class="m-b-0">Welcome to Mega Able</p>
+                                        <h5 class="m-b-4">Categoría</h5>
+                                        <p class="m-b-0">Administrar categorías</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -546,9 +545,7 @@
                                         <li class="breadcrumb-item">
                                             <a href="./index.html"> <i class="fa fa-home"></i> </a>
                                         </li>
-                                        <li class="breadcrumb-item"><a href="#!">Dashboard</a>
-                                        </li>
-                                        <li class="breadcrumb-item"><a href="#!">Dashboard Ecommerce</a>
+                                        <li class="breadcrumb-item"><a href="#!">Categoría</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -565,10 +562,220 @@
                                         <div class="row">
 
                                             <!-- sales start - Aqui empiez el codigo-->
+                                            <div class="col-sm-12">
+                                              <!-- para centrar la tabla al medio-->
+                                              <!-- HTML5 Export Buttons table start -->
+                                              <div class="card">
+                                                  <div class="card-header table-card-header">
+                                                      <h5>HTML5 Export Buttons</h5>
+                                                  </div>
+                                                  <div class="card-block">
+                                                      <div class="dt-responsive table-responsive">
+                                                          <table id="basic-btn" class="table table-striped table-bordered nowrap">
+                                                              <thead>
+                                                                  <tr>
+                                                                      <th>Name</th>
+                                                                      <th>Position</th>
+                                                                      <th>Office</th>
+                                                                      <th>Age</th>
+                                                                      <th>Estado</th>
+                                                                      <th>Opciones</th>
+                                                                  </tr>
+                                                              </thead>
+                                                              <tbody>
+                                                                  <tr>
+                                                                      <td>Michael Silva</td>
+                                                                      <td>Marketing Designer</td>
+                                                                      <td>London</td>
+                                                                      <td>66</td>
+                                                                      <td><span class="badge badge-success">Activo</span></td>
+                                                                      <td>
+                                                                        <button type="button" class="btn .btn-xs" name="button">
+                                                                          <i class="ti-marker-alt"></i>
+                                                                        </button>
+                                                                        <button type="button" class=" .btn-md" name="button">
+                                                                          <i class="ti-marker-alt"></i>
+                                                                        </button>
+                                                                        <button type="button" class=".btn-sm" name="button">
+                                                                          <i class="ti-marker-alt"></i>
+                                                                        </button>
+                                                                        <button type="button" class=".btn-xs" name="button">
+                                                                          <i class="ti-marker-alt"></i>
+                                                                        </button>
+                                                                        <button class="btn waves-effect waves-light btn-warning btn-icon">
+                                                                          <i class="ti-marker-alt"></i>
+                                                                        </button>
+                                                                        <button type="button" class="btn waves-effect waves-light btn-success btn-icon" data-toggle="modal" data-target="#modalNuevo">
 
+                                                                          <i class="ti-marker-alt"></i>
+                                                                        </button> &nbsp;
+                                                                        <button class="btn waves-effect waves-light btn-danger btn-icon" data-target="#modalEliminar">
+                                                                          <i class="fa fa-trash"></i>
+                                                                        </button>
+                                                                      </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td>Michael Silva</td>
+                                                                      <td>Marketing Designer</td>
+                                                                      <td>London</td>
+                                                                      <td>66</td>
+                                                                      <td>2012/11/27</td>
+                                                                      <td>$198,500</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td>Michael Silva</td>
+                                                                      <td>Marketing Designer</td>
+                                                                      <td>London</td>
+                                                                      <td>66</td>
+                                                                      <td>2012/11/27</td>
+                                                                      <td>$198,500</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td>Michael Silva</td>
+                                                                      <td>Marketing Designer</td>
+                                                                      <td>London</td>
+                                                                      <td>66</td>
+                                                                      <td>2012/11/27</td>
+                                                                      <td>$198,500</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td>Michael Silva</td>
+                                                                      <td>Marketing Designer</td>
+                                                                      <td>London</td>
+                                                                      <td>66</td>
+                                                                      <td>2012/11/27</td>
+                                                                      <td>$198,500</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td>Michael Silva</td>
+                                                                      <td>Marketing Designer</td>
+                                                                      <td>London</td>
+                                                                      <td>66</td>
+                                                                      <td>2012/11/27</td>
+                                                                      <td>$198,500</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td>Michael Silva</td>
+                                                                      <td>Marketing Designer</td>
+                                                                      <td>London</td>
+                                                                      <td>66</td>
+                                                                      <td>2012/11/27</td>
+                                                                      <td>$198,500</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td>Paul Byrd</td>
+                                                                      <td>Chief Financial Officer (CFO)</td>
+                                                                      <td>New York</td>
+                                                                      <td>64</td>
+                                                                      <td>2010/06/09</td>
+                                                                      <td>$725,000</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td>Gloria Little</td>
+                                                                      <td>Systems Administrator</td>
+                                                                      <td>New York</td>
+                                                                      <td>59</td>
+                                                                      <td>2009/04/10</td>
+                                                                      <td>$237,500</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td>Bradley Greer</td>
+                                                                      <td>Software Engineer</td>
+                                                                      <td>London</td>
+                                                                      <td>41</td>
+                                                                      <td>2012/10/13</td>
+                                                                      <td>$132,000</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td>Dai Rios</td>
+                                                                      <td>Personnel Lead</td>
+                                                                      <td>Edinburgh</td>
+                                                                      <td>35</td>
+                                                                      <td>2012/09/26</td>
+                                                                      <td></td>
+                                                                  </tr>
+                                                              </tbody>
 
+                                                          </table>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <!-- HTML5 Export Buttons end -->
+                                              <!-- Column Selectors table start -->
+                                              <div class="card">
+                                                  <div class="card-header">
+                                                      <h5>Configuration Option</h5>
+                                                      <span>The Responsive extension for DataTables can be applied to a DataTable in one of two ways; with a specific class name on the table, or using the DataTables initialisation options. This method shows the latter, with the responsive option being set to the boolean value true.</span>
+                                                  </div>
+                                                  <div class="card-block">
+                                                      <table id="res-config" class="table display">
+                                                          <thead>
+                                                              <tr>
+                                                                  <th>First name</th>
+                                                                  <th>Last name</th>
+                                                                  <th>Position</th>
+                                                                  <th>Office</th>
+                                                                  <th>Age</th>
+                                                                  <th>Start date</th>
+                                                                  <th>Salary</th>
+                                                                  <th>Extn.</th>
+                                                                  <th>E-mail</th>
+                                                              </tr>
+                                                          </thead>
+                                                          <tbody>
+                                                              <tr>
+                                                                  <td>Tiger</td>
+                                                                  <td>Nixon</td>
+                                                                  <td>System Architect</td>
+                                                                  <td>Edinburgh</td>
+                                                                  <td>61</td>
+                                                                  <td>2011/04/25</td>
+                                                                  <td>$320,800</td>
+                                                                  <td>
+                                                                    <span class="badge badge-success">Activo</span>
+                                                                  </td>
+                                                                  <td>
+                                                                    <button class="btn waves-effect waves-light btn-warning btn-icon">
+                                                                      <i class="ti-marker-alt"></i>
+                                                                    </button>
+                                                                    <button type="button" class="btn waves-effect waves-light btn-success btn-icon" data-toggle="modal" data-target="#modalNuevo">
 
+                                                                      <i class="ti-marker-alt"></i>
+                                                                    </button> &nbsp;
+                                                                    <button class="btn waves-effect waves-light btn-danger btn-icon" data-target="#modalEliminar">
+                                                                      <i class="fa fa-trash"></i>
+                                                                    </button></td>
+                                                              </tr>
+                                                              <tr>
+                                                                  <td>Garrett</td>
+                                                                  <td>Winters</td>
+                                                                  <td>Accountant</td>
+                                                                  <td>Tokyo</td>
+                                                                  <td>63</td>
+                                                                  <td>2011/07/25</td>
+                                                                  <td>$170,750</td>
+                                                                  <td>
+                                                                    <span class="badge badge-success">Activo</span>
+                                                                  </td>
+                                                                  <td>
+                                                                    <button class="btn waves-effect waves-light btn-warning btn-icon">
+                                                                      <i class="ti-marker-alt"></i>
+                                                                    </button>
+                                                                    <button type="button" class="btn waves-effect waves-light btn-success btn-icon" data-toggle="modal" data-target="#modalNuevo">
 
+                                                                      <i class="ti-marker-alt"></i>
+                                                                    </button> &nbsp;
+                                                                    <button class="btn waves-effect waves-light btn-danger btn-icon" data-target="#modalEliminar">
+                                                                      <i class="fa fa-trash"></i>
+                                                                    </button>
+                                                                  </td>
+                                                              </tr>
+                                                          </tbody>
+                                                      </table>
+                                                  </div>
+                                              </div>
+
+                                          </div>
 
                                         </div>
                                     </div>
@@ -629,36 +836,36 @@
 </div>
 <![endif]-->
 <!-- Warning Section Ends -->
+<!-- Warning Section Ends -->
 <!-- Required Jquery -->
 <script type="text/javascript" src="../files/bower_components/jquery/js/jquery.min.js"></script>
 <script type="text/javascript" src="../files/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="../files/bower_components/popper.js/js/popper.min.js"></script>
 <script type="text/javascript" src="../files/bower_components/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../files/assets/pages/widget/excanvas.js"></script>
-<!-- jquery slimscroll js -->
-<script type="text/javascript" src="../files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
 <!-- waves js -->
 <script src="../files/assets/pages/waves/js/waves.min.js"></script>
+<!-- jquery slimscroll js -->
+<script type="text/javascript" src="../files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
 <!-- modernizr js -->
 <script type="text/javascript" src="../files/bower_components/modernizr/js/modernizr.js"></script>
-<!-- slimscroll js -->
-<script type="text/javascript" src="../files/assets/js/SmoothScroll.js"></script>
-<script src="../files/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-<!-- Chart js -->
-<script type="text/javascript" src="../files/bower_components/chart.js/js/Chart.js"></script>
-<!-- amchart js -->
-<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
-<script src="../files/assets/pages/widget/amchart/gauge.js"></script>
-<script src="../files/assets/pages/widget/amchart/serial.js"></script>
-<script src="../files/assets/pages/widget/amchart/light.js"></script>
-<script src="../files/assets/pages/widget/amchart/pie.min.js"></script>
-<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
-
-<!-- menu js -->
+<script type="text/javascript" src="../files/bower_components/modernizr/js/css-scrollbars.js"></script>
+<!-- data-table js -->
+<script src="../files/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../files/bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../files/assets/pages/data-table/js/jszip.min.js"></script>
+<script src="../files/assets/pages/data-table/js/pdfmake.min.js"></script>
+<script src="../files/assets/pages/data-table/js/vfs_fonts.js"></script>
+<script src="../files/assets/pages/data-table/extensions/responsive/js/dataTables.responsive.min.js"></script>
+<script src="../files/bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="../files/bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="../files/bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../files/bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../files/bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+<!-- Custom js -->
+<script src="../files/assets/pages/data-table/extensions/responsive/js/responsive-custom.js"></script>
 <script src="../files/assets/js/pcoded.min.js"></script>
 <script src="../files/assets/js/vertical/vertical-layout.min.js"></script>
-<!-- custom js -->
-<script type="text/javascript" src="../files/assets/pages/dashboard/ecommerce-dashboard.js"></script>
+<script src="../files/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="../files/assets/js/script.js"></script>
 </body>
 

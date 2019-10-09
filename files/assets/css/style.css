@@ -365,7 +365,7 @@ code {
   left: 0;
 }
 .page-header .page-block {
-  padding: 35px 40px;
+  padding: 5px 20px;
 }
 .page-header .page-block .breadcrumb {
   float: right;
@@ -13945,17 +13945,17 @@ th {
 }
 
 table.dataTable.display tbody tr.odd, table.dataTable.stripe tbody tr.odd {
-  background-color: #ddeaff;
+  /*background-color: #ddeaff; Probando fondo de tabla contenedora - RINCOSOFT*/
 }
 table.dataTable.display tbody tr.even > .sorting_1, table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
-  background-color: #f7faff;
+
 }
 table.dataTable.display tbody tr.odd > .sorting_1, table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
-  background-color: #c4daff;
+/*  background-color: #c4daff; Probando fondo de tabla contenedora - RINCOSOFT*/
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(68, 138, 255, 0.1);
+/*  background-color: rgba(68, 138, 255, 0.1);Probando fondo de tabla contenedora - RINCOSOFT*/
 }
 
 .dataTables_filter .form-control {
@@ -21452,10 +21452,16 @@ background-repeat: no-repeat;
   background-color: #28343a;
   border: 1px solid #4c626d;
 }
-.pcoded[layout-type="dark"] .page-link {
-  background-color: #4c626d;
-  border-color: #28343a;
+.pcoded[layout-type="dark"] .page-item.active .page-link {
+  background-color: #448aff;
+  border-color: #448aff;
 }
+.pcoded[layout-type="dark"] .page-link {
+  background-color: rgba(3, 7, 9, 0.75);
+  border-color: #74a4bd;
+}/*RINCOSOFT - para poner fondo a la numeracion de plantilla negra*/
+
+
 .pcoded[layout-type="dark"] .jqpagination input {
   margin: 0;
   height: 30px;
@@ -21742,16 +21748,16 @@ background-repeat: no-repeat;
   color: #37474f;
 }
 .pcoded[layout-type="dark"] table.dataTable tbody tr {
-  background-color: #56707c;
+
 }
 .pcoded[layout-type="dark"] table.dataTable.display tbody tr.odd, .pcoded[layout-type="dark"] table.dataTable.stripe tbody tr.odd {
-  background-color: #6c8a99;
+  background-color: rgba(2, 41, 61, 0.47);
 }
 .pcoded[layout-type="dark"] table.dataTable.display tbody tr.even > .sorting_1, .pcoded[layout-type="dark"] table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
-  background-color: #7c96a3;
+/*  background-color: rgba(68, 138, 255, 0.83); Tabla responive que muestra el acordion - RINCOSOFT*/
 }
 .pcoded[layout-type="dark"] table.dataTable.display tbody tr.odd > .sorting_1, .pcoded[layout-type="dark"] table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
-  background-color: #617d8b;
+/*  background-color: rgba(3, 8, 10, 0.88); Tabla responive que muestra el acordion - RINCOSOFT*/
 }
 .pcoded[layout-type="dark"] .table-striped tbody tr:nth-of-type(odd) {
   background-color: rgba(68, 138, 255, 0.1);
