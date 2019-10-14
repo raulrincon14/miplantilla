@@ -85,7 +85,10 @@ code {
       Main-body css start
 ==========================  **/
 .main-body .page-wrapper {
-  padding: 1.8rem;
+  padding-top: 0.1rem;
+  padding-right: 1.8rem;
+  padding-bottom: 1.8rem;
+  padding-left: 1.8rem;
   -webkit-transition: all ease-in 0.3s;
   transition: all ease-in 0.3s;
 }
@@ -126,7 +129,10 @@ code {
 .card .card-header {
   background-color: transparent;
   border-bottom: none;
-  padding: 20px;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px;
   position: relative;
   -webkit-box-shadow: 0px 1px 20px 0px rgba(69, 90, 100, 0.08);
           box-shadow: 0px 1px 20px 0px rgba(69, 90, 100, 0.08);
@@ -189,7 +195,10 @@ code {
   height: 20px;
 }
 .card .card-block {
-  padding: 20px;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px;
 }
 .card .card-block table tr {
   padding-bottom: 20px;
@@ -7597,7 +7606,7 @@ table tbody .border-bottom-info td {
   margin-left: 10px;
 }
 .header-navbar .navbar-wrapper .navbar-container .nav-right > .header-notification:nth-child(2) .show-notification li:first-child:hover, .header-navbar .navbar-wrapper .navbar-container .nav-right > .header-notification:nth-child(2) .profile-notification li:first-child:hover {
-  background-color: #fff;
+  /*background-color: #fff; RINCOSOFT - FONDO BLANCO DEBAJO DEL MENU DE ARRIBA*/
 }
 .header-navbar .navbar-wrapper .navbar-container .header-notification {
   -webkit-perspective: 1000px;
@@ -7843,7 +7852,10 @@ table tbody .border-bottom-info td {
 }
 
 .pcoded-inner-content {
-  padding: 10px;
+  padding-top: 2px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .pcoded .pcoded-navbar .pcoded-item {
@@ -10222,10 +10234,10 @@ body.menu-bottom #collapse-menu {
 }
 .btn.btn-icon {
   border-radius: 50%;
-  width: 40px;
-  line-height: 30px;
-  height: 40px;
-  padding: 3px;
+  width: 30px;
+  line-height: 20px;
+  height: 30px;
+  padding: 1px;
   text-align: center;
 }
 .btn.btn-out {
@@ -13965,7 +13977,7 @@ table.dataTable.display tbody tr.odd > .sorting_1, table.dataTable.order-column.
 
 .dataTable.table td,
 .dataTable.table th {
-  padding: 0.75rem;
+  padding: 0.30rem;
 }
 
 table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,
@@ -21308,7 +21320,9 @@ background-repeat: no-repeat;
   color: #37474f;
 }
 .pcoded[layout-type="dark"] select.form-control {
-  background-color: #41555e;
+  /*background-color: #41555e; RINCOSOFT - ELIMINADO PARA TRANSPARENCIA*/
+
+  background: #448AFF;
 }
 .pcoded[layout-type="dark"] .main-body .page-wrapper .page-header-title h4 {
   color: #fff;
@@ -21566,7 +21580,7 @@ background-repeat: no-repeat;
   background-color: #465a64;
 }
 .pcoded[layout-type="dark"] .dt-responsive input {
-  background-color: #4c626d;
+  /*background-color: #4c626d; RINCOSOFT - DESACTIVADO PARA TRANSPARENCIA*/
   border: 1px solid #41555e;
 }
 .pcoded[layout-type="dark"] .footable-details.table-striped > tbody > tr:nth-child(odd),
